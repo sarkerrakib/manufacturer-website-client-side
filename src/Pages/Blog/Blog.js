@@ -4,33 +4,26 @@ const Blog = () => {
     return (
         <div>
             <div>
-                <h2 className='text-center m-5 blog fs-1'>BLOGS</h2>
+                <h2 className='text-center my-10 text-3xl font-bold'>BLOGS</h2>
             </div>
-            <div className='container'>
-                <div className="border border-secondary p-3 rounded">
-                    <div className='fw-bolder fs-4 '>
-                        1. Difference between javascript and node js <br />
+            <div className='container mx-auto px-14'>
+                <div className="border border-primary p-3 rounded">
+                    <div className='fw-bolder text-xl font-bold '>
+                        1. How will you improve the performance of a React Application? <br />
 
                     </div>
-                    <div className="fs-5">
+                    <div className="text-lg">
                         Ans:- <br />
-                        <b>JavaScript:</b><br />
-                        -It is a fast, flexible, lightweight, and open-source programming language.<br />
-                        -It works with interfaces, modules, and classes to give an interactive look to your web pages.<br />
-                        -You can use it for both frontend and backend development.<br />
-                        -All browsers support JavaScript, and you can run it on almost every device.<br />
-                        -You can create amazing web interfaces with JS, such as mouse hovers.<br />
-                        -Because of its versatile nature, you can use this language to build mobile apps, web apps, and games.<br />
-                        -JavaScript can be extended for developing large applications.
+                        <b></b>
+                        Great execution is significant for any application or item. While working with React Native, you may frequently deal with issues with the presentation of your application. That is the reason you really want to focus on the prescribed procedures and execution upgrades for your React Native application during its improvement so you can fix these issues and convey an immaculate encounter to the end clients. we can utilize a few procedures to accelerate the application:
 
-                        <br /><br />
-                        <b>Node JS:</b><br />
-                        -Node JS is a lightweight framework that uses very few modules. You can add more modules if required.<br />
-                        -Being a cross-platform language, it can work on Windows, Mac, and Linux.<br />
-                        -It is an open-sourced MIT licensed language.<br />
-                        -To create server-side applications, it works with JavaScript.<br />
-                        -All of the library APIs in Node JS is non-blocking and asynchronous. In this framework, servers don’t wait for data to return from the API.<br />
-                        -The programming execution library of Node JS builds on the V8 JavaScript engine.
+                        By adding a bolt work in a class, we add it as an item and not as the model property of the class. What's more, assuming we utilize the part at different times, there will be different occurrences of these capacities inside each object of the part. The most dependable method for utilizing capacities is to tie them with the constructor.
+
+                        The program frequently contributes a ton of time delivering, when styles are suggested inline. Prearranging and delivering take time on the grounds that the program needs to arrange for all the React style rules to the CSS properties. Making a different style.js document and bringing it into the part is a quicker strategy.
+
+                        Keep away from additional labels by utilizing React parts: Using respond sections diminishes the no. of extra labels and fulfills the need of having a solitary parent component in the part.
+
+                        Making capacities in render() is a terrible practice that can prompt some genuine execution issues. Each time a part re-delivers, an alternate callback is made. This probably won't be an issue for basic and more modest parts, yet it is a major issue for PureComponents and React.memo() or when the capacity is passed as a prop to a youngster part, which would bring about pointless re-renders.
                     </div>
                 </div>
 
@@ -40,34 +33,35 @@ const Blog = () => {
 
                 {/* second question */}
 
-                <div className="border border-secondary p-3 rounded">
-                    <div className='fw-bolder fs-4'>
-                        2. When should you use nodejs and when should you use mongodb <br />
+                <div className="border border-primary p-3 rounded">
+                    <div className='fw-bolder text-xl font-bold'>
+                        2. What are the different ways to manage a state in a React application?<br />
                     </div>
-                    <div className="fs-5">
+                    <div className="text-lg">
                         Ans:- <br />
-                        <b>Node JS:</b><br />
-                        Everyone's talking about Node.js taking over the programming world and its great advantages. While all frameworks and languages come with some benefits, it's Node.js that takes over development in enterprises. The big question is...
-                        Why use Node.js and it has become a standard for large-scale applications?
+                        Each React part has an implicit state. This state is an item which stores the property estimations that have a place with a part. State can keep information from various parts in-a state of harmony on the grounds that each state update re-delivers every important part.
 
-                        It’s hard to escape the gravitational pull of JavaScript and its ubiquity in modern Web development. While it’s been offering great frameworks and libraries for creating interactive, modern interfaces for many years now, it never did deploy any backend platform that could compete with other well-established languages. Node.js, however, the cool kid on the JavaScript block, has come to offer a viable alternative, one that has since been embraced by multiple startups and enterprises.
-                        Development with Node.js lives up to its opinion as the new standard for enterprise applications. Any programming language will give you some reasons to choose them over others. The thing about Node.js is that it was developed for applications at scale. Modern tooling and its embrace of the forward-looking way of developing complex applications make Node.js stand apart from other programming technologies.
+                        The underlying way that React accommodates setting part states is by utilizing setState() and adding "neighborhood state" to a class. There are a few alternate ways of overseeing state s in React, including the utilization of:<br />
 
+                        -Snares <br />
+                        -Respond Context API <br />
+                        -Apollo Link State <br />
 
-                        <br /><br />
-                        <b>MongoDB:</b><br />
-                        MongoDB is built on a scale-out architecture that has become popular with developers of all kinds for developing scalable applications with evolving data schemas.
+                        The implicit setState() strategy refreshes a variable's worth in the classes' nearby store. This nearby store permits the refreshed variable qualities to be gotten to by any capacity that might require these qualities.
 
-                        As a document database, MongoDB makes it easy for developers to store structured or unstructured data. It uses a JSON-like format to store documents. This format directly maps to native objects in most modern programming languages, making it a natural choice for developers, as they don’t need to think about normalizing data. MongoDB can also handle high volume and can scale both vertically or horizontally to accommodate large data loads.
+                        setState() tells React that this part and its kids (some of the time postponed and gathered into a solitary cluster) ought to be re-delivered with the most refreshed express; this re-render is in many cases in view of client set off occasions
 
-                        MongoDB was built for people building internet and business applications who need to evolve quickly and scale elegantly. Companies and development teams of all sizes use MongoDB for a wide variety of reasons.
+                        Information state covers data that your React application stores briefly for different business capacities. Evidently, you are building a venture the executives application. The data put away in the information state will incorporate the accompanying things - project names, contacts, insights concerning the clients, and so forth.
 
-                        MongoDB is a general-purpose database used in various ways to support applications in many different industries (e.g., telecommunications, gaming, finances, healthcare, and retail). MongoDB has found a home in many different businesses and functions because it solves long-standing problems in data management and software development. Typical use cases for MongoDB include: <br />
-                        -Integrating large amounts of diverse data <br />
-                        -Describing complex data structures that evolve <br />
-                        -Delivering data in high-performance applications <br />
-                        -Supporting hybrid and multi-cloud applications <br />
-                        -Supporting agile development and collaboration
+                        The Data state will get all the data from the external world. Be that as it may, how might it recognize which data is what and regardless of whether it should be put away in the information state?
+
+                        Indeed, every snippet of data will have an identifier that will assist the Data with expressing perceive and demand for specific data that it can store.
+
+                        Each part of gotten information has a sort and a selector which indicates the sort of information got. You can plan a revival store for your information whenever you have delineated a method for distinguishing the sort and id of a got object.
+
+                        In opposition to the state referenced above in a React application, the control state doesn't address the application's current circumstance. All things considered, it alludes to the state which the client has input into the application. For instance, structure inputs, chose things, and so on. Control state is known to be more different and flexible with regards to putting away data.
+
+                        While structure inputs are a gigantic heap of data with numerous items set up, chose things go about as a solitary line of data addressing an Id, and the control state proficiently stores the two sorts of information easily.
                     </div>
                 </div>
 
@@ -77,30 +71,19 @@ const Blog = () => {
 
                 {/* thirt question */}
 
-                <div className="border border-secondary p-3 rounded">
-                    <div className='fw-bolder fs-4'>
-                        3. Differences between sql and nosql databases. <br />
+                <div className="border border-primary p-3 rounded">
+                    <div className='fw-bolder text-xl font-bold'>
+                        3. How does prototypical inheritance work? <br />
                     </div>
-                    <div className="fs-5">
+                    <div className="text-lg">
                         Ans:- <br />
-                        <b>SQL:</b><br />
-                        SQL (Structured Query Language) is a language that can be used to interact with relational databases. SQL is the standard language that is used to perform CRUD (create, read, update, delete) operations across all Relational Database Management Systems (RDBMS). People love SQL because it provides a rigid structure which makes working with data in your database quite simple. SQL has been around since the late 1970s and is industry standard across RDBSs, so there are lots of resources available for you to learn and problem-solve.
-                        <br />
+                        prototypical inheritance refers to the ability to access object properties from another object. We use a JavaScript prototype to add new properties and methods to an existing object constructor. We can then essentially tell our JS code to inherit properties from a prototype. Prototypical inheritance allows us to reuse the properties or methods from one JavaScript object to another through a reference pointer function.
+                        Prototypes are the mechanism by which JavaScript objects inherit features from one another. In this article, we explain how prototype chains work and look at how the prototype property can be used to add methods to existing constructors.
 
-                        -Complex queries and reporting: If you are working with complex queries and want your data presented in a specific and consistent way, SQL is likely the better option.<br />
-                        -No anticipated changes to data: If your data will always follow the same structure, using a NoSQL database might be overkill. SQL databases can handle structured, consistent data very well.<br />
-                        -Relational data: Both NoSQL and SQL databases can handle relational data, however, SQL can do so while occupying less memory and using organized tables. It might require more effort to create a schema for your data, but querying with it will be easier.<br />
-                        -Consistency is a must: If you are building a database for a payroll system or a bank, consistency is extremely important. In situations like these, the rigid structure of a SQL database is useful.
+                        When it comes to inheritance, JavaScript only has one construct: objects. Each object has a private property which holds a link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype.
+                        The call() allows for a function/method belonging to one object to be assigned and called for a different object. call() provides a new value of this to the function/method. With call() , you can write a method once and then inherit it in another object, without having to rewrite the method for the new object.
+                        JavaScript is a prototype based language, so, whenever we create a function using JavaScript, JavaScript engine adds a prototype property inside a function, Prototype property is basically an object (also known as Prototype object), where we can attach methods and properties in a prototype object.
 
-
-                        <br /><br />
-                        <b>NoSQL:</b><br />
-                        NoSQL databases are non-relational and can handle structured, unstructured, or semi-structured data. NoSQL databases can use many different data structures like key-value pairs, graphs, documents, or columns to store your data, which can make it better suited for specific applications. <br />
-
-                        -Data is constantly changing: It is difficult to predict how your application, and as a result your data, will change over time. Using NoSQL allows for different fields and data types without having to restructure your database. <br />
-                        -Unstructured, unrelated data: This is where NoSQL excels. There are far fewer limitations on what you can store and how you need to store it. You can have a mix of structured and unstructured data. <br />
-                        -Want to get set up fast: Using NoSQL allows you to have a dynamic schema so you don't need to spend time thoroughly planning how you are going to store your data. This is great when following practices like Agile or Scrum where you need to build prototypes quickly.<br />
-                        -Significant scale needed: Scaling a NoSQL database is extremely easy because you can scale horizontally. If you are anticipating having huge amounts of data that needs to be accessed in near real-time, NoSQL might be better for you.
                     </div>
                 </div>
 
@@ -110,25 +93,46 @@ const Blog = () => {
 
                 {/* forth question */}
 
-                <div className="border border-secondary p-3 mb-5 rounded">
-                    <div className='fw-bolder fs-4'>
+                <div className="border border-primary p-3 mb-5 rounded">
+                    <div className='fw-bolder text-xl font-bold'>
                         4. What is the purpose of jwt and how does it work. <br />
                     </div>
-                    <div className="fs-5">
+                    <div className="text-lg">
                         Ans:- <br />
-                        JSON Web Token (JWT) is an open standard (RFC 7519) for securely transmitting information between parties as JSON object.
+                        Unit testing includes testing individual parts of the product program or application. The fundamental reason behind this is to make sure that every one of the singular parts are functioning as planned. A unit is known as the littlest conceivable part of programming that can be tried. By and large, it has a couple of information sources and a solitary result.
+                        The primary target of unit testing is to guarantee that every individual part is functioning admirably and as it should work. The whole framework may have the option to function admirably in the event that the singular parts are functioning admirably. Unit testing is performed by the product engineers themselves. Once in a while, free programming analyzers likewise play out these tests.
 
-                        It is compact, readable and digitally signed using a private key/ or a public key pair by the Identity Provider(IdP). So the integrity and authenticity of the token can be verified by other parties involved.<br />
+                        There are two primary kinds of unit testing: manual and robotized. The mechanized technique is the most liked as it is quicker and more exact, yet playing out this undertaking physically is additionally a choice. The manual methodology has a bit by bit informative strategy that assists analyzers with playing out this undertaking effectively. The computerized unit testing as a rule includes the designer first composing a part of the code in the application with the goal that the capacity can be tried.
 
-                        The purpose of using JWT is not to hide data but to ensure the authenticity of the data. JWT is signed and encoded, not encrypted.
+                        From that point onward, when the application is conveyed, they eliminate the test code. They can likewise seclude the capacity to test it in a more exhaustive manner. This assists with recognizing any reliance that may be there between the tried code and different information spaces. These conditions can then be disposed of.
+                        <br />
+                        To justify any effort in business, there must be a positive impact on the bottom line. Here are a few benefits to writing unit tests:<br />
+                        -Unit tests save time and money. Usually, we tend to test the happy path more than the unhappy path. If you release such an app without thorough testing, you would have to keep fixing issues raised by your potential users. The time to fix these issues could’ve been used to build new features or optimize the existing system. Bear in mind that fixing bugs without running tests could also introduce new bugs into the system.<br />
+                        -Well-written unit tests act as documentation for your code. Any developer can quickly look at your tests and know the purpose of your functions.<br />
+                        -Unit testing is an integral part of extreme programming. Extreme programming is basically a “test-everything-that-can-possibly-break” programming strategy.<br />
+                        -Unit tests make code reuse easier. If you want to reuse existing code in a new project, you can simply migrate both the code and tests to your new project, then run your tests to make sure you have the desired results.
 
-                        JWT is a token based stateless authentication mechanism. Since it is a client-side based stateless session, server doesn't have to completely rely on a datastore(database) to save session information.<br />
 
-                        Basically the identity provider(IdP) generates a JWT certifying user identity and Resource server decodes and verifies the authenticity of the token using secret salt / public key.<br />
-                        -User sign-in using username and password or google/facebook.<br />
-                        -Authentication server verifies the credentials and issues a jwt signed using either a secret salt or a private key.<br />
-                        -User's Client uses the JWT to access protected resources by passing the JWT in HTTP Authorization header.<br />
-                        -Resource server then verifies the authenticity of the token using the secret salt/ public key.
+                    </div>
+                </div>
+
+                {/* fifth question */}
+
+                <div className="border border-primary p-3 mb-5 rounded">
+                    <div className='fw-bolder text-xl font-bold'>
+                        5. Why you do not set the state directly in React. For example, if you have const [products, setProducts] = useState([]). Why you do not set products = [...] instead, you use the setProducts <br />
+                    </div>
+                    <div className="text-lg">
+                        Ans:- <br />
+                        In the event that we attempt to set the state straightforwardly, it won't re-render the component.Instead use setState() technique. It plans an update to a part's state object. At the point when state changes, the part answers by re-delivering.
+                        This is an impractical notion for two reasons (despite the fact that it would work in this model, and numerous others).
+
+                        (different examples to stay away from are things like this.state.something = x and this.state = x)
+
+                        Transforming state straightforwardly can prompt odd bugs, and parts that are difficult to improve. Here is a model.
+
+                        As you may definitely be aware, a typical method for tuning a React part for execution is to make it "unadulterated," which makes it just re-render when its props change (rather than each time its parent re-renders). This should be possible naturally by expanding React.PureComponent rather than React.Component, or physically by carrying out the shouldComponentUpdate lifecycle strategy to contrast nextProps and current props. In the event that the props appear to be identical, it avoids the render, and saves some time.
+
                     </div>
                 </div>
 
