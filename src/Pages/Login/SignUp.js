@@ -5,7 +5,8 @@ import { useForm } from 'react-hook-form';
 import Loading from '../Shared/Loading';
 import { Link } from 'react-router-dom';
 
-const Login = () => {
+
+const SignUp = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
     const { register, formState: { errors }, handleSubmit } = useForm();
     const [
@@ -47,7 +48,7 @@ const Login = () => {
                     </div>
                     <div className="md:w-8/12 lg:w-5/12 lg:ml-20 ">
                         <form onSubmit={handleSubmit(onSubmit)}>
-                            
+
 
                             {/* <!-- Email input --> */}
                             <div className="mb-6">
@@ -61,15 +62,15 @@ const Login = () => {
                                             message: 'Email is Required'
                                         },
                                         pattern: {
-                                          value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
-                                          message: 'Provide a valid Email' 
+                                            value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
+                                            message: 'Provide a valid Email'
                                         }
-                                      })}
+                                    })}
                                 />
                                 <label className='label'>
-                                {errors.email?.type === 'required' && <span className='label-text-alt text-red-500'>{errors.email.message}</span>}
-                                {errors.email?.type === 'pattern' && <span className='label-text-alt text-red-500'>{errors.email.message}</span>}
-                                      
+                                    {errors.email?.type === 'required' && <span className='label-text-alt text-red-500'>{errors.email.message}</span>}
+                                    {errors.email?.type === 'pattern' && <span className='label-text-alt text-red-500'>{errors.email.message}</span>}
+
                                 </label>
                             </div>
 
@@ -85,15 +86,15 @@ const Login = () => {
                                             message: 'Password is Required'
                                         },
                                         minLength: {
-                                          value: 6,
-                                          message: 'Must be 6 Characters or longer' 
+                                            value: 6,
+                                            message: 'Must be 6 Characters or longer'
                                         }
-                                      })}
+                                    })}
                                 />
                                 <label className='label'>
-                                {errors.password?.type === 'required' && <span className='label-text-alt text-red-500'>{errors.password.message}</span>}
-                                {errors.password?.type === 'minLength' && <span className='label-text-alt text-red-500'>{errors.password.message}</span>}
-                                      
+                                    {errors.password?.type === 'required' && <span className='label-text-alt text-red-500'>{errors.password.message}</span>}
+                                    {errors.password?.type === 'minLength' && <span className='label-text-alt text-red-500'>{errors.password.message}</span>}
+
                                 </label>
                             </div>
 
@@ -191,4 +192,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default SignUp;
