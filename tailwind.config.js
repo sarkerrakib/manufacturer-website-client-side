@@ -7,8 +7,8 @@ module.exports = {
     themes: [
       {
         manufacturertheme: {
-          primary: "#0784BB",
-          secondary: "#1A1D7D",
+          primary: "#BB9B30",
+          secondary: "#D3C191",
           accent: "#37cdbe",
           neutral: "#3d4451",
           "base-100": "#ffffff",

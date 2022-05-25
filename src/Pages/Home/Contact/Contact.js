@@ -108,7 +108,7 @@ const Contact = () => {
                         </div>
 
                         <div>
-                            <button class="btn">Book Appointment</button>
+                            <button class="btn btn-primary text-white">Book Appointment</button>
                         </div>
                     </form>
                 </div>

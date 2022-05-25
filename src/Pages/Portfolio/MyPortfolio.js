@@ -2,10 +2,10 @@ import React from 'react';
 
 const MyPortfolio = () => {
     return (
-        <section className="font-jost hyphens-manual">
+        <section className="font-jost hyphens-manual my-12">
             {/* <!-- Page --------------------------------------------------------------------------------------------------------> */}
             <div
-                className="max-w-3xl p-3 mx-auto my-auto bg-gray-100 border-4 border-gray-700 print:border-0 page print:max-w-letter print:max-h-letter print:mx-0 print:my-o lg:h-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-16 lg:mt-6 rounded-2xl print:bg-white"
+                className="max-w-7xl p-3 mx-auto my-auto bg-gray-100 border-4 border-gray-700 print:border-0 page print:max-w-letter print:max-h-letter print:mx-0 print:my-o lg:h-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-16 lg:mt-6 rounded-2xl print:bg-white"
             >
                 {/* <!-- Name ----------------------------------------------------------------------------------------------------> */}
                 <header
@@ -13,7 +13,7 @@ const MyPortfolio = () => {
                 >
                     <div className="block">
                         <h1 className="mb-0 text-5xl font-bold text-gray-750">
-                            Thomas Leon Highbaugh
+                            MD.Rakibul Islam
                         </h1>
                         {/* <!--Job Title---------------------------------------------------------------------------------------------------------> */}
                         <h2
@@ -26,7 +26,7 @@ const MyPortfolio = () => {
                         <h3
                             className="m-0 mt-2 ml-2 font-semibold text-md text-gray-550 leading-snugish"
                         >
-                            San Francisco, California
+                            Dhaka,Bangladesh
                         </h3>
                     </div>
                     {/* <!--   Initials Block         --> */}
@@ -34,9 +34,9 @@ const MyPortfolio = () => {
                         className="justify-between px-3 mt-0 mb-5 text-3xl font-bold leading-none text-gray-200 initials-container bg-gray-750 print:bg-black"
                         // style="padding-bottom: 1.5rem; padding-top: 1.5rem"
                     >
-                        <div className="text-center initial">T</div>
+                        {/* <div className="text-center initial">T</div>
                         <div className="text-center initial">L</div>
-                        <div className="text-center initial">H</div>
+                        <div className="text-center initial">H</div> */}
                     </div>
                 </header>
 
@@ -50,7 +50,7 @@ const MyPortfolio = () => {
                         <div className="break-inside-avoid">
                             <section className="pb-2 mb-2 border-b-2 break-inside-avoid">
                                 <ul className="list-inside pr-7">
-                                    <li
+                                    {/* <li
                                         className="mt-1 leading-normal text-black transition duration-100 ease-in text-gray-550 text-md hover:text-gray-700 print:"
                                     >
                                         <a href="https://thomasleonhighbaugh.me" className="group">
@@ -66,7 +66,7 @@ const MyPortfolio = () => {
                                                 ↗
                                             </span>
                                         </a>
-                                    </li>
+                                    </li> */}
                                     <li
                                         className="mt-1 leading-normal transition duration-100 ease-in text-gray-550 text-md hover:text-gray-700"
                                     >
@@ -76,7 +76,7 @@ const MyPortfolio = () => {
                                             >
                                                 Github:
                                             </span>
-                                            Thomashighbaugh
+                                            https://github.com/sarkerrakib
                                             <span
                                                 className="inline-block font-normal text-black transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700 print:"
                                             >
@@ -94,7 +94,7 @@ const MyPortfolio = () => {
                                             >
                                                 Email:
                                             </span>
-                                            thighbaugh@zoho.com
+                                            rakibsarker1761@gmail.com
                                             <span
                                                 className="inline-block font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700"
                                             >
@@ -105,13 +105,13 @@ const MyPortfolio = () => {
                                     <li
                                         className="mt-1 leading-normal transition duration-100 ease-in text-gray-550 text-md hover:text-gray-700"
                                     >
-                                        <a href="tel:+15103095128">
+                                        <a href="tel:+8801950087566">
                                             <span
                                                 className="mr-5 text-lg font-semibold text-gray-700 leading-snugish"
                                             >
                                                 Phone:
                                             </span>
-                                            +1(510)309-5128
+                                            +8801950087566
                                         </a>
                                     </li>
                                 </ul>
@@ -119,8 +119,8 @@ const MyPortfolio = () => {
                         </div>
                     </section>
                     {/* <!--Summary ----------------------------------------------------------------------------------------------------------> */}
-                    <section className="pb-2 pb-4 mt-4 border-b-4 first:mt-0">
-                        {/* <!-- To keep in the same column --> */}
+                    {/* <section className="pb-2 pb-4 mt-4 border-b-4 first:mt-0">
+                       
                         <div className="break-inside-avoid">
                             <h2
                                 className="mb-2 text-lg font-bold tracking-widest text-gray-700 print:font-normal"
@@ -137,7 +137,7 @@ const MyPortfolio = () => {
                                 </p>
                             </section>
                         </div>
-                    </section>
+                    </section> */}
                     {/* <!--Experience ------------------------------------------------------------------------------------------------------> */}
                     <section className="pb-2 pb-4 mt-4 border-b-4 first:mt-0">
                         {/* <!-- To keep in the same column -------------------------------------------------------------------------> */}
@@ -153,10 +153,10 @@ const MyPortfolio = () => {
                                     <h3
                                         className="text-lg font-semibold text-gray-650 leading-snugish"
                                     >
-                                        Full Stack Web Developer
+                                        WordPress Web Developer
                                     </h3>
                                     <p className="leading-normal text-md text-gray-550">
-                                        Jun 2018 &ndash; Present | Freelance
+                                        Jun 2020 &ndash; Present | Freelancer
                                     </p>
                                 </header>
                                 <ul className="mt-2.1 text-md text-gray-700 leading-normal">
@@ -174,7 +174,7 @@ const MyPortfolio = () => {
                                         >
                                             &rsaquo;
                                         </span>
-                                        designed full stack web experiences for clients
+                                        designed wordPress web experiences for clients
                                     </li>
                                     <li>
                                         <span
@@ -229,10 +229,10 @@ const MyPortfolio = () => {
                                     <h3
                                         className="flex-grow text-lg font-semibold text-gray-700 leading-snugish"
                                     >
-                                        California State University East Bay
+                                        Shanto-Mariam University of Creative Technology
                                     </h3>
                                     <p className="leading-normal text-md text-gray-550">
-                                        2009 &ndash; 2014 | Bachelor of Arts
+                                        2019 &ndash;  | Bachelor of CSE
                                     </p>
                                 </header>
                                 <p className="mt-1 leading-normal text-md text-gray-650">
@@ -241,16 +241,16 @@ const MyPortfolio = () => {
                                     >
                                         Major:
                                     </span>
-                                    Political Science
+                                     Computer Science & Engineering
                                 </p>
-                                <p className="mt-1 leading-normal text-md text-gray-650">
+                                {/* <p className="mt-1 leading-normal text-md text-gray-650">
                                     <span
                                         className="font-semibold text-gray-700 text-md leading-snugish"
                                     >
                                         Minor:
                                     </span>
                                     Economics
-                                </p>
+                                </p> */}
                                 <p className="leading-normal text-gray-700 text-md">
                                     <span
                                         className="font-semibold text-gray-700 text-md leading-snugish"
@@ -266,20 +266,19 @@ const MyPortfolio = () => {
                                     <h3
                                         className="flex-grow text-lg font-semibold text-gray-700 leading-snugish"
                                     >
-                                        Las Positas Community College
+                                        Uttara High School & College
                                     </h3>
                                     <p className="leading-normal text-md text-gray-550">
-                                        2018 &ndash; Present | Associate of Science/Continuing
-                                        Education
+                                        2017 &ndash; Passed | 
                                     </p>
                                 </header>
                                 <p className="mt-1 leading-normal text-md text-gray-650">
                                     <span
                                         className="font-semibold text-gray-700 text-md leading-snugish"
                                     >
-                                        Major:
+                                        Group:
                                     </span>
-                                    Computer Science
+                                    Science
                                 </p>
                                 <p className="mt-1 leading-normal text-md text-gray-650"></p>
                                 <p className="leading-normal text-gray-700 text-md">
@@ -288,7 +287,7 @@ const MyPortfolio = () => {
                                     >
                                         GPA:
                                     </span>
-                                    4.0
+                                    5.0
                                 </p>
                             </section>
 
@@ -298,19 +297,19 @@ const MyPortfolio = () => {
                                     <h3
                                         className="flex-grow text-lg font-semibold text-gray-700 leading-snugish"
                                     >
-                                        Codify Academy
+                                        Milestone College
                                     </h3>
                                     <p className="leading-normal text-md text-gray-550">
-                                        2018 | Certificate
+                                    2015 &ndash; Passed | Certificate
                                     </p>
                                 </header>
                                 <p className="mt-1 leading-normal text-md text-gray-650">
                                     <span
                                         className="font-semibold text-gray-700 text-md leading-snugish"
                                     >
-                                        Subject:
+                                        Group:
                                     </span>
-                                    Front End Development
+                                    Science
                                 </p>
                             </section>
                         </div>
@@ -331,121 +330,32 @@ const MyPortfolio = () => {
                                         className="text-lg font-semibold text-gray-700 leading-snugish"
                                     >
                                         <a
-                                            href="https://github.com/WebPraktikos/universal-resume"
+                                            href="https://warehouse-ae41e.web.app/"
                                             className="group"
-                                        >
-                                            Portfolio Website
+                                        >https://warehouse-ae41e.web.app/
+                                            
                                             <span
                                                 className="inline-block mr-3 font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700"
                                             >
                                                 ↗
                                             </span>
-                                        </a>
-                                        <span
-                                            className="inline-block font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700"
-                                        >
-                                            <a
-                                                href="https://github.com/Thomashighbaugh/ThomasLeonHighbaugh-Personal-Site"
-                                            >
-                                                <i className="fab fa-github"></i>
-                                            </a>
-                                        </span>
-                                    </h3>
-                                    <p className="leading-normal text-md text-gray-550">
-                                        Since 2019 | JSX, React, Next.js, SCSS
-                                    </p>
-                                </header>
-                                <p className="mt-2.1 text-md text-gray-700 leading-normal">
-                                    A unique and streamlined developer portfolio site that
-                                    combines the useful aspect of development portfolios with a
-                                    blog using Next.js. Interface is clean and features graphics
-                                    designed personally for use within the site.
-                                </p>
-                            </section>
-                            {/* <!--Project 2--> */}
-                            <section className="pb-4 mb-4 border-b-2 break-inside-avoid">
-                                <header>
-                                    <h3
-                                        className="text-lg font-semibold text-gray-700 leading-snugish"
-                                    >
+                                        </a><br/>
                                         <a
-                                            href="https://github.com/WebPraktikos/tailwindcss-rich-docs"
+                                            href="https://lustrous-hamster-20fbe8.netlify.app/"
                                             className="group"
-                                        >
-                                            Keeper CRM
+                                        >https://lustrous-hamster-20fbe8.netlify.app/
+                                            
                                             <span
                                                 className="inline-block mr-3 font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700"
                                             >
                                                 ↗
                                             </span>
-                                        </a>
-                                        <span
-                                            className="inline-block font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700"
-                                        >
-                                            <a
-                                                href="https://github.com/Thomashighbaugh/mern-contact-keeper"
-                                            >
-                                                <i className="fab fa-github"></i>
-                                            </a>
-                                        </span>
-                                    </h3>
-                                    <p className="leading-normal text-md text-gray-550">
-                                        2021 | MERN
-                                    </p>
-                                </header>
-                                <p className="mt-2.1 text-md text-gray-700 leading-normal">
-                                    Written as part of the process of learning the MERN stack,
-                                    this application stores contacts for registered users and
-                                    saves the information they input between sessions.
-                                </p>
-                            </section>
-                            {/* <!--Project 3----------------------------------------------------------> */}
-                            <section className="pb-4 mb-4 border-b-2 break-inside-avoid">
-                                <header>
-                                    <h3
-                                        className="text-lg font-semibold text-gray-700 leading-snugish"
-                                    >
-                                        <a href="https://g5-blog-ccl-ife.vercel.app/" className="group">
-                                            Crazy-Wise Gatsby Starter
-                                            <span
-                                                className="inline-block mr-3 font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700"
-                                            >
-                                                ↗
-                                            </span>
-                                        </a>
-                                        <span
-                                            className="inline-block font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700"
-                                        >
-                                            <a
-                                                href="https://github.com/Thomashighbaugh/crazy-wise-gatsby-starter"
-                                            >
-                                                <i className="fab fa-github"></i>
-                                            </a>
-                                        </span>
-                                    </h3>
-                                    <p className="leading-normal text-md text-gray-550">
-                                        2020 | React, Styled Components, Gatsby.js
-                                    </p>
-                                </header>
-                                <p className="mt-2.1 text-md text-gray-700 leading-normal">
-                                    A starter blog for Gatsby.js that has tinaCMS integrated into
-                                    development server to ease the production of content and a
-                                    very distinct appearance that is both modern and functional.
-                                    All graphics used in the page heroes are custom pieces made
-                                    for the site.
-                                </p>
-                            </section>
-                            {/* <!--Project 4----------------------------------------------------------> */}
-                            <section className="mb-2 break-inside-avoid">
-                                <header>
-                                    <h3
-                                        className="text-lg font-semibold text-gray-700 leading-snugish"
-                                    >
+                                        </a><br/>
                                         <a
-                                            href="https://github.com/Thomashighbaugh/Opitx/releases"
+                                            href="https://jsr-photography.web.app/"
                                             className="group"
-                                        >
-                                            Opitx Markdown Editor
+                                        >https://jsr-photography.web.app/
+                                            
                                             <span
                                                 className="inline-block mr-3 font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700"
                                             >
@@ -455,25 +365,19 @@ const MyPortfolio = () => {
                                         <span
                                             className="inline-block font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700"
                                         >
+
                                             <a
-                                                href="https://github.com/Thomashighbaugh/Opitx/releases"
+                                                href="https://warehouse-ae41e.web.app/"
                                             >
                                                 <i className="fab fa-github"></i>
                                             </a>
                                         </span>
                                     </h3>
-                                    <p className="leading-normal text-md text-gray-550">
-                                        2019 | Electron, React, SCSS
-                                    </p>
+                                    
                                 </header>
-                                <p className="mt-2.1 text-md text-gray-700 leading-normal">
-                                    An answer to a personal problem with Markdown editors avalable
-                                    on Linux which provided a less than transparent process of
-                                    saving in user defined locations that evolved into a Markdown
-                                    editor written using electron and packaged for all major Linux
-                                    distributions.
-                                </p>
+                                
                             </section>
+                            
                         </div>
                     </section>
                     {/* <!--Begin Skills -----------------------------------------------------------------------------------------------------> */}
@@ -500,107 +404,107 @@ const MyPortfolio = () => {
                                         className="flex flex-wrap text-sm2 leading-relaxed -mr-1.6 -mb-1"
                                     >
                                         <li
-                                            className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                            className="px-2.5 mr-1.6 mb-1 text-black leading-relaxed print:bg-white print:border-inset bg-gray-250"
                                         >
                                             HTML5
                                         </li>
                                         <li
-                                            className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                            className="px-2.5 mr-1.6 mb-1 text-black leading-relaxed print:bg-white print:border-inset bg-gray-250"
                                         >
                                             CSS3
                                         </li>
                                         <li
-                                            className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                            className="px-2.5 mr-1.6 mb-1 text-black leading-relaxed print:bg-white print:border-inset bg-gray-250"
                                         >
-                                            SCSS
+                                            Bootstrap
                                         </li>
 
                                         <li
-                                            className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                            className="px-2.5 mr-1.6 mb-1 text-black leading-relaxed print:bg-white print:border-inset bg-gray-250"
                                         >
                                             Tailwind.css
                                         </li>
-                                        <li
-                                            className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                        {/* <li
+                                            className="px-2.5 mr-1.6 mb-1 text-black leading-relaxed print:bg-white print:border-inset bg-gray-250"
                                         >
                                             LESS
-                                        </li>
+                                        </li> */}
                                         <li
-                                            className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                            className="px-2.5 mr-1.6 mb-1 text-black leading-relaxed print:bg-white print:border-inset bg-gray-250"
                                         >
                                             Javascript
                                         </li>
 
                                         <li
-                                            className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                            className="px-2.5 mr-1.6 mb-1 text-black leading-relaxed print:bg-white print:border-inset bg-gray-250"
                                         >
                                             Typescript
                                         </li>
                                         <li
-                                            className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                            className="px-2.5 mr-1.6 mb-1 text-black leading-relaxed print:bg-white print:border-inset bg-gray-250"
                                         >
                                             Node.js
                                         </li>
                                         <li
-                                            className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                            className="px-2.5 mr-1.6 mb-1 text-black leading-relaxed print:bg-white print:border-inset bg-gray-250"
                                         >
                                             JSX
                                         </li>
                                         <li
-                                            className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                            className="px-2.5 mr-1.6 mb-1 text-black leading-relaxed print:bg-white print:border-inset bg-gray-250"
                                         >
                                             React
                                         </li>
                                         <li
-                                            className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                            className="px-2.5 mr-1.6 mb-1 text-black leading-relaxed print:bg-white print:border-inset bg-gray-250"
                                         >
                                             React-Router
                                         </li>
 
                                         <li
-                                            className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                            className="px-2.5 mr-1.6 mb-1 text-black leading-relaxed print:bg-white print:border-inset bg-gray-250"
                                         >
                                             Next.js
                                         </li>
-                                        <li
-                                            className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                        {/* <li
+                                            className="px-2.5 mr-1.6 mb-1 text-black leading-relaxed print:bg-white print:border-inset bg-gray-250"
                                         >
                                             Redux
                                         </li>
                                         <li
-                                            className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                            className="px-2.5 mr-1.6 mb-1 text-black leading-relaxed print:bg-white print:border-inset bg-gray-250"
                                         >
                                             Vue
-                                        </li>
+                                        </li> */}
                                         <li
-                                            className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                            className="px-2.5 mr-1.6 mb-1 text-black leading-relaxed print:bg-white print:border-inset bg-gray-250"
                                         >
                                             Express.js
                                         </li>
                                         <li
-                                            className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                            className="px-2.5 mr-1.6 mb-1 text-black leading-relaxed print:bg-white print:border-inset bg-gray-250"
                                         >
                                             NoSQL
                                         </li>
                                         <li
-                                            className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                            className="px-2.5 mr-1.6 mb-1 text-black leading-relaxed print:bg-white print:border-inset bg-gray-250"
                                         >
                                             MongoDB
                                         </li>
                                         <li
-                                            className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                            className="px-2.5 mr-1.6 mb-1 text-black leading-relaxed print:bg-white print:border-inset bg-gray-250"
                                         >
                                             MERN
                                         </li>
-                                        <li
-                                            className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                        {/* <li
+                                            className="px-2.5 mr-1.6 mb-1 text-black leading-relaxed print:bg-white print:border-inset bg-gray-250"
                                         >
                                             PHP
-                                        </li>
+                                        </li> */}
                                         <li
-                                            className="px-2.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+                                            className="px-2.5 mr-1.6 mb-1 text-black leading-relaxed print:bg-white print:border-inset bg-gray-250"
                                         >
-                                            LAMP
+                                            WordPress
                                         </li>
                                     </ul>
                                 </div>
@@ -608,7 +512,7 @@ const MyPortfolio = () => {
 
                             {/* <!--DevOps ------------------------ -------------------------------------------------------------------------------------------> */}
 
-                            <section className="mb-2 break-inside-avoid">
+                            {/* <section className="mb-2 break-inside-avoid">
                                 <header>
                                     <h3
                                         className="font-semibold text-gray-700 text-m leading-snugish"
@@ -691,7 +595,7 @@ const MyPortfolio = () => {
                                         </li>
                                     </ul>
                                 </div>
-                            </section>
+                            </section> */}
                         </div>
                     </section>
                 </div>

@@ -14,7 +14,7 @@ const Service = ({service}) => {
                 <p>Min-Order: {service.order}</p>
                 <p>Unit-Price: {service.price}</p>
                 <div class="card-actions">
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button class="btn btn-primary text-white">Buy Now</button>
                 </div>
             </div>
         </div>
