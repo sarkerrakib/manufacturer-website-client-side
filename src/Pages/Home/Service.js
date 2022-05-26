@@ -21,7 +21,7 @@ const Service = ({service}) => {
                 <p>Min-Order: {order}</p>
                 <p>Unit-Price: {price}</p>
                 <div class="card-actions">
-                    <button onClick={() => navigateToServiceDetail(_id)} class="btn btn-primary text-white">Buy Now</button>
+                    <button onClick={() => navigateToServiceDetail(_id)} class="btn btn-primary text-white"><a href="http://localhost:3000/purchase">Buy Now</a> </button>
                 </div>
             </div>
         </div>

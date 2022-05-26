@@ -1,43 +1,51 @@
 import React from 'react';
 import auth from '../../firebase.init';
-import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import Loading from '../Shared/Loading';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const SignUp = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
     const { register, formState: { errors }, handleSubmit } = useForm();
     const [
-        signInWithEmailAndPassword,
+        createUserWithEmailAndPassword,
         user,
         loading,
         error,
-      ] = useSignInWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth);
+
+    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+
+    const navigate = useNavigate();
 
     let signInError;
 
-    if( loading || gLoading){
+    if( loading || gLoading || updating){
         return <Loading></Loading>
     }
 
-    if(error || gError){
-        signInError= <p className='text-red-500'><small>{error?.message || gError?.message}</small></p>
+    if(error || gError || updateError){
+        signInError= <p className='text-red-500'><small>{error?.message || gError?.message || updateError?.message}</small></p>
     }
 
     if ( user || gUser) {
         console.log( user || gUser);
     }
 
-    const onSubmit = data => {
-        console.log(data);
-        signInWithEmailAndPassword(data.email, data.password);
+    const onSubmit = async data => {
+        
+        await createUserWithEmailAndPassword(data.email, data.password);
+        await updateProfile({ displayName: data.name});
+        console.log('update done');
+        navigate('/');
     };
 
     return (
         <section className="h-screen px-14 ">
             <div className="container px-6 py-12 h-full">
+            <h2 className='text-center text-3xl font-bold'>Sign-Up</h2>
                 <div className="flex justify-center items-center flex-wrap h-full g-6 text-gray-800">
                     <div className="md:w-8/12 lg:w-6/12 mb-12 md:mb-0">
                         <img
@@ -50,7 +58,25 @@ const SignUp = () => {
                         <form onSubmit={handleSubmit(onSubmit)}>
 
 
-                            {/* <!-- Email input --> */}
+                            {/* <!-- Name input --> */}
+                            <div className="mb-6">
+                                <input
+                                    type="text"
+                                    className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                    placeholder="Your Name"
+                                    {...register("name", {
+                                        required: {
+                                            value: true,
+                                            message: 'Name is Required'
+                                        },
+                                    })}
+                                />
+                                <label className='label'>
+                                    {errors.name?.type === 'required' && <span className='label-text-alt text-red-500'>{errors.name.message}</span>}
+                                    
+                                </label>
+                            </div>
+                                    {/* <!-- email input --> */}
                             <div className="mb-6">
                                 <input
                                     type="email"
@@ -100,7 +126,7 @@ const SignUp = () => {
 
 
                             {/* //labels */}
-                            <div className="flex justify-between items-center mb-6">
+                            {/* <div className="flex justify-between items-center mb-6">
                                 <div className="form-group form-check">
                                     <input
                                         type="checkbox"
@@ -117,7 +143,7 @@ const SignUp = () => {
                                     className="text-blue-600 hover:text-blue-700 focus:text-blue-700 active:text-blue-800 duration-200 transition ease-in-out"
                                 >Forgot password?</a
                                 >
-                            </div>
+                            </div> */}
                             {signInError}
                             {/* <!-- Submit button --> */}
                             <button
@@ -126,10 +152,10 @@ const SignUp = () => {
                                 data-mdb-ripple="true"
                                 data-mdb-ripple-color="light"
                             >
-                                Log In
+                                Sign Up
                             </button>
 
-                            <p><small>New here? <Link className='text-amber-400' to="/signup">Create new account</Link></small></p>
+                            <p><small>Already have an account? <Link className='text-amber-400' to="/login">Please Log-in</Link></small></p>
 
                             <div
                                 className="flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5"

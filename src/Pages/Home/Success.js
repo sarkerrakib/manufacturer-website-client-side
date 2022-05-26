@@ -4,22 +4,22 @@ const state = [
     {
         _id: 1,
         title: 'success project',
-        value: '5000+',
+        value: '10000+',
         desc: ''
 
     },
     {
         _id: 2,
         title: 'Happy Clients',
-        value: '1500+',
+        value: '3500+',
         desc: ''
 
     },
     {
         _id: 3,
-        title: 'Supply',
-        value: '70+',
-        desc: 'Countries'
+        title: 'Annual revenue',
+        value: '170M+',
+        desc: ''
 
     },
     {

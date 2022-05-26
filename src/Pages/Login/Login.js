@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import auth from '../../firebase.init';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import Loading from '../Shared/Loading';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -16,6 +16,15 @@ const Login = () => {
       ] = useSignInWithEmailAndPassword(auth);
 
     let signInError;
+    const navigate = useNavigate();
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/purchase";
+
+    useEffect( () =>{
+        if ( user || gUser) {
+            navigate(from, {replace: true });
+        }
+    }, [user, gUser, from, navigate]);
 
     if( loading || gLoading){
         return <Loading></Loading>
@@ -25,18 +34,14 @@ const Login = () => {
         signInError= <p className='text-red-500'><small>{error?.message || gError?.message}</small></p>
     }
 
-    if ( user || gUser) {
-        console.log( user || gUser);
-    }
-
     const onSubmit = data => {
-        console.log(data);
         signInWithEmailAndPassword(data.email, data.password);
     };
 
     return (
         <section className="h-screen px-14 ">
             <div className="container px-6 py-12 h-full">
+                <h2 className='text-center text-3xl font-bold'>Log-In</h2>
                 <div className="flex justify-center items-center flex-wrap h-full g-6 text-gray-800">
                     <div className="md:w-8/12 lg:w-6/12 mb-12 md:mb-0">
                         <img
@@ -99,7 +104,7 @@ const Login = () => {
 
 
                             {/* //labels */}
-                            <div className="flex justify-between items-center mb-6">
+                            {/* <div className="flex justify-between items-center mb-6">
                                 <div className="form-group form-check">
                                     <input
                                         type="checkbox"
@@ -116,7 +121,7 @@ const Login = () => {
                                     className="text-blue-600 hover:text-blue-700 focus:text-blue-700 active:text-blue-800 duration-200 transition ease-in-out"
                                 >Forgot password?</a
                                 >
-                            </div>
+                            </div> */}
                             {signInError}
                             {/* <!-- Submit button --> */}
                             <button
