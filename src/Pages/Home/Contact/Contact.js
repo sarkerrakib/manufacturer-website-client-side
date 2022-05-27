@@ -7,100 +7,100 @@ const Contact = () => {
             <div className='text-center'>
                 <h3 className='text-primary text-4xl font-bold uppercase'>Book your Appointment</h3>
             </div>
-            <div class="main-wrapper">
-                <div class="form-wrapper">
+            <div className="main-wrapper">
+                <div className="form-wrapper">
                     <form
                         action="https://formbold.com/s/YOUR_KEY"
                         method="POST">
-                        <div class="mb-5">
-                            <label for="name" class="form-label"> Full Name </label>
+                        <div className="mb-5">
+                            <label htmlFor="name" className="form-label"> Full Name </label>
                             <input
                                 type="text"
                                 name="name"
                                 id="name"
                                 placeholder="Full Name"
-                                class="form-input"
+                                className="form-input"
                             />
                         </div>
-                        <div class="mb-5">
-                            <label for="phone" class="form-label"> Phone Number </label>
+                        <div className="mb-5">
+                            <label htmlFor="phone" className="form-label"> Phone Number </label>
                             <input
                                 type="text"
                                 name="phone"
                                 id="phone"
                                 placeholder="Enter your phone number"
-                                class="form-input"
+                                className="form-input"
                             />
                         </div>
-                        <div class="mb-5">
-                            <label for="email" class="form-label"> Email Address </label>
+                        <div className="mb-5">
+                            <label htmlFor="email" className="form-label"> Email Address </label>
                             <input
                                 type="email"
                                 name="email"
                                 id="email"
                                 placeholder="Enter your email"
-                                class="form-input"
+                                className="form-input"
                             />
                         </div>
-                        <div class="flex flex-wrap -mx-3">
-                            <div class="w-full sm:w-half px-3">
-                                <div class="mb-5 w-full">
-                                    <label for="date" class="form-label"> Date </label>
-                                    <input type="date" name="date" id="date" class="form-input" />
+                        <div className="flex flex-wrap -mx-3">
+                            <div className="w-full sm:w-half px-3">
+                                <div className="mb-5 w-full">
+                                    <label htmlFor="date" className="form-label"> Date </label>
+                                    <input type="date" name="date" id="date" className="form-input" />
                                 </div>
                             </div>
-                            <div class="w-full sm:w-half px-3">
-                                <div class="mb-5">
-                                    <label for="time" class="form-label"> Time </label>
-                                    <input type="time" name="time" id="time" class="form-input" />
+                            <div className="w-full sm:w-half px-3">
+                                <div className="mb-5">
+                                    <label htmlFor="time" className="form-label"> Time </label>
+                                    <input type="time" name="time" id="time" className="form-input" />
                                 </div>
                             </div>
                         </div>
 
-                        <div class="mb-5 pt-3">
-                            <label class="form-label form-label-2"> Address Details </label>
-                            <div class="flex flex-wrap -mx-3">
-                                <div class="w-full sm:w-half px-3">
-                                    <div class="mb-5">
+                        <div className="mb-5 pt-3">
+                            <label className="form-label form-label-2"> Address Details </label>
+                            <div className="flex flex-wrap -mx-3">
+                                <div className="w-full sm:w-half px-3">
+                                    <div className="mb-5">
                                         <input
                                             type="text"
                                             name="area"
                                             id="area"
                                             placeholder="Enter area"
-                                            class="form-input"
+                                            className="form-input"
                                         />
                                     </div>
                                 </div>
-                                <div class="w-full sm:w-half px-3">
-                                    <div class="mb-5">
+                                <div className="w-full sm:w-half px-3">
+                                    <div className="mb-5">
                                         <input
                                             type="text"
                                             name="city"
                                             id="city"
                                             placeholder="Enter city"
-                                            class="form-input"
+                                            className="form-input"
                                         />
                                     </div>
                                 </div>
-                                <div class="w-full sm:w-half px-3">
-                                    <div class="mb-5">
+                                <div className="w-full sm:w-half px-3">
+                                    <div className="mb-5">
                                         <input
                                             type="text"
                                             name="state"
                                             id="state"
                                             placeholder="Enter state"
-                                            class="form-input"
+                                            className="form-input"
                                         />
                                     </div>
                                 </div>
-                                <div class="w-full sm:w-half px-3">
-                                    <div class="mb-5">
+                                <div className="w-full sm:w-half px-3">
+                                    <div className="mb-5">
                                         <input
                                             type="text"
                                             name="post-code"
                                             id="post-code"
                                             placeholder="Post Code"
-                                            class="form-input"
+                                            className="form-input"
                                         />
                                     </div>
                                 </div>
@@ -108,7 +108,7 @@ const Contact = () => {
                         </div>
 
                         <div>
-                            <button class="btn btn-primary text-white">Book Appointment</button>
+                            <button className="btn btn-primary text-white w-full">Book Appointment</button>
                         </div>
                     </form>
                 </div>

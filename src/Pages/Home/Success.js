@@ -1,11 +1,12 @@
 import React from 'react';
 import Stats from './Stats';
+
 const state = [
     {
         _id: 1,
         title: 'success project',
         value: '10000+',
-        desc: ''
+        desc: '',
 
     },
     {

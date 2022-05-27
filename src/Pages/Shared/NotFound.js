@@ -4,8 +4,8 @@ import notFound from '../../images/notFound.png';
 const NotFound = () => {
     return (
 
-        <div className=''>
-            <img className='' src={notFound} alt="" />
+        <div className='mx-auto'>
+            <img className='w-full' src={notFound} alt="" />
         </div>
 
     );

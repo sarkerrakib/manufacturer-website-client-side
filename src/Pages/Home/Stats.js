@@ -2,12 +2,12 @@ import React from 'react';
 
 const Stats = ({stats}) => {
     return (
-        <div class="stats shadow">
+        <div className="stats shadow">
 
-            <div class="stat text-center">
-                <div class="stat-title text-lg">{stats.title}</div>
-                <div class="stat-value">{stats.value}</div>
-                <div class="stat-desc">{stats.desc}</div>
+            <div className="stat text-center">
+                <div className="stat-title text-lg">{stats.title}</div>
+                <div className="stat-value">{stats.value}</div>
+                <div className="stat-desc">{stats.desc}</div>
             </div>
 
         </div>

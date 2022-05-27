@@ -3,6 +3,7 @@ import Service from './Service';
 
 const Services = () => {
     const [services, setServices] = useState([]);
+    
 
     useEffect(() => {
         fetch('http://localhost:5000/store')
