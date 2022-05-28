@@ -50,7 +50,7 @@ const Details = () => {
     return (
         <div className='mx-auto flex justify-center items-center'>
             <div >
-                <h2 className='text-center text-5xl'>Purchase Page</h2>
+                <h2 className='text-center text-5xl my-14'>Purchase Page</h2>
                 <div className="card w-96 bg-base-100 shadow-xl">
                     <figure className="px-10 pt-10">
                         <img src={details?.img} alt="tools" className="rounded-xl w-50" />

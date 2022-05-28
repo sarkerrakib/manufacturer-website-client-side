@@ -8,7 +8,12 @@ const MyOrders = () => {
     const [user, loading, error] = useAuthState(auth);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/order/${user?.email}`)
+        fetch(`http://localhost:5000/order/${user?.email}`, {
+            method: 'GET',
+            headers:{
+                'authorization': `Bearer ${localStorage.getItem('accessToken')}`
+            }
+        })
             .then(res => res.json())
             .then(data => setOrders(data));
     }, []);
@@ -18,7 +23,7 @@ const MyOrders = () => {
 console.log(orders);
     return (
         <div>
-            <h2>My Orders all together</h2>
+            <h2 className='mb-5 text-center'>My Orders all together</h2>
             {/* {
                 orders.map(order=><h1)
             } */}
@@ -27,9 +32,9 @@ console.log(orders);
                     <thead>
                         <tr>
                             <th></th>
-                            <th>Name</th>
-                            <th>Date</th>
-                            <th>Time</th>
+                            <th>Order id</th>
+                            <th>Product Name</th>
+                            <th>Email</th>
                             <th>Treatment</th>
                             <th>Payment</th>
                         </tr>
@@ -38,10 +43,10 @@ console.log(orders);
                         {
                             orders.map((a, index) => <tr key={a._id}>
                                 <th>{index + 1}</th>
-                                <td>{a?.name}</td>
-                                <td>{a?.orderId}</td>
-                                <td>{a?.email}</td>
                                 <td>{a?._id}</td>
+                                <td>{a?.name}</td>
+                                <td>{a?.email}</td>
+                                
                                 
                             </tr>)
                         }
