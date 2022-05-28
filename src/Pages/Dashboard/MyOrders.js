@@ -49,7 +49,6 @@ console.log(orders);
                             <th>Order id</th>
                             <th>Product Name</th>
                             <th>Email</th>
-                            <th>Treatment</th>
                             <th>Payment</th>
                         </tr>
                     </thead>
